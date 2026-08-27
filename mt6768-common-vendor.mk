@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/vendor.trustonic.tee-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee-service.rc \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/motorola/mt6768-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
@@ -525,7 +524,6 @@ PRODUCT_PACKAGES += \
     volte_stack \
     volte_ua \
     wfca \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     android.hardware.audio.parameter_parser.service \
