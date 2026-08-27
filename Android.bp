@@ -1377,36 +1377,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaedv",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaedv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libunwindstack",
-                "libselinux",
-                "liblog",
-                "libz",
-                "libc",
-                "libdl",
-                "libm",
-                "libc++",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libapmonitor_vendor",
     owner: "motorola",
     strip: {
@@ -3398,33 +3368,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libcrypto",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libladder",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",

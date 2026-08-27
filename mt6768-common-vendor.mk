@@ -184,7 +184,6 @@ PRODUCT_PACKAGES += \
     libaal_cust \
     libaal_sec \
     libaalservice \
-    libaedv \
     libapmonitor_vendor \
     libapu_mdw \
     libarm_egl_properties_sysprop \
@@ -251,7 +250,6 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
-    libladder \
     libmbrainSDKv \
     libmemsic \
     libmipc \
