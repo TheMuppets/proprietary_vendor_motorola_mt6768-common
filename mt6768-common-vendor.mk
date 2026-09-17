@@ -458,7 +458,6 @@ PRODUCT_PACKAGES += \
     MtkTelephonyAssist \
     mediatek-ims-base \
     mediatek-telephony-base \
-    mediatek-telephony-common \
     mediatek-ims-extension-plugin \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
@@ -536,5 +535,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
-    mediatek-telephony-base \
-    mediatek-telephony-common
+    mediatek-telephony-base
