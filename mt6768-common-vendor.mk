@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl \
+    libmnl_mtk \
     libmp4enc_sa.ca7 \
     libmsbc_mtk \
     libmtcloader \

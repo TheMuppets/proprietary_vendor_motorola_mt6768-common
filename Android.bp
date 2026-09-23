@@ -3514,7 +3514,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_mtk",
     owner: "motorola",
     strip: {
         none: true,
@@ -3522,7 +3522,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmnl.so",
+                "proprietary/vendor/lib64/libmnl_mtk.so",
             ],
             shared_libs: [
                 "libc++",
@@ -10319,7 +10319,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
