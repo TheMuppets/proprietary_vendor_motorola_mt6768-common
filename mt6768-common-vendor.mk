@@ -25,6 +25,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2438:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2438 \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2438_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2438_ENUM \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
@@ -96,9 +98,35 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/vendor.trustonic.tee-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee-service.rc \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root-R3.cer \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/gold.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/gold.cer \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/root-singtel.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/root-singtel.crt \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/le_audio_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/le_audio_codec_capabilities.xml \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/motorola/mt6768-common/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
@@ -142,6 +170,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-V3-ndk \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
     arm.graphics-V5-ndk \
@@ -170,6 +200,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
     vulkan.mali \
+    libAVCSecureVencCA \
     libDR \
     libDefaultFpsActor \
     libFrameRecord \
@@ -177,13 +208,16 @@ PRODUCT_PACKAGES += \
     libMcClient \
     libMtkSpeechEnh \
     libNoFpsActor \
+    libOpenCL \
     libQstAlgo \
     libTEECommon \
     lib_iir \
     libaal_cust \
+    libaal_key \
     libaal_sec \
     libaalservice \
     libapmonitor_vendor \
+    libappgamepq \
     libapu_mdw \
     libarm_egl_properties_sysprop \
     libarm_gralloc_properties_sysprop \
@@ -211,6 +245,7 @@ PRODUCT_PACKAGES += \
     libbwc \
     libcarrierconfig \
     libccci_util \
+    libcharon-ss \
     libcodec2_fsr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
@@ -221,6 +256,8 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
     libconnfem \
+    libcrypto-mdapp \
+    libcurl-md \
     libcurl_xcap_md \
     libcustom_nvram \
     libcvsd_mtk \
@@ -238,6 +275,7 @@ PRODUCT_PACKAGES += \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
+    libgz_gp_client \
     libgz_uree \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -245,9 +283,8 @@ PRODUCT_PACKAGES += \
     libh264dec_se.ca7 \
     libhevce_sb.ca7.android \
     libhwm \
+    libhydra \
     libifcutils_mtk \
-    libion_mtk \
-    libion_ulit \
     libipsec_ims_shr \
     libmbrainSDKv \
     libmemsic \
@@ -293,15 +330,19 @@ PRODUCT_PACKAGES += \
     libpqxmlparser \
     libratconfig \
     librcs_volte_core \
+    librgbwlightsensor \
     librilfusion \
     librt_extamp_intf \
     libsdrparser \
     libsensor_custom \
     libsilkybrightnesscore \
+    libsimaka \
     libsimlock \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libssl-mdapp \
     libstorage_otp \
+    libstrongswan \
     libswtcc \
     libsysenv \
     libthha \
@@ -351,7 +392,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -480,6 +520,7 @@ PRODUCT_PACKAGES += \
     bip \
     ccci_mdinit \
     ccci_rpcd \
+    charon \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -511,6 +552,8 @@ PRODUCT_PACKAGES += \
     mtk_storageproxyd \
     muxreport \
     nvram_daemon \
+    starter \
+    stroke \
     v3avpud-64b \
     volte_clientapi_ua \
     volte_imcb \
