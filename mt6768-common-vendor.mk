@@ -137,7 +137,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/motorola/mt6768-common/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/motorola/mt6768-common/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/motorola/mt6768-common/proprietary/vendor/firmware/ILITEK_FW.hex:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW.hex \
@@ -363,7 +362,6 @@ PRODUCT_PACKAGES += \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
     libvpudv3a_vcodec \
-    libwifi-hal-mtk \
     libwifinvram \
     libwifinvramdata \
     libwo \
